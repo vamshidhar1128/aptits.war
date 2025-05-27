@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aptits-deployment
+  labels:
+    app: aptits
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: aptits
+  template:
+    metadata:
+      labels:
+        app: aptits
+    spec:
+      containers:
+      - name: aptits-container
+        image: vamshidhar1128/aptits:latest
+        ports:
+        - containerPort: 8080
