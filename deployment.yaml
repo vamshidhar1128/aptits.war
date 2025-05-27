@@ -18,4 +18,4 @@ spec:
       - name: aptits-container
         image: vamshidhar1128/aptits:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
