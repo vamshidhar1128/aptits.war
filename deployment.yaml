@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: aptits-container
-        image: vamshidhar1128/meesho
+        image: vamshidhar1128/football
         ports:
         - containerPort: 8081
